@@ -1,0 +1,8 @@
+th, td {
+    height: 50px;
+    text-align: center;
+    line-height: 50px !important;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "宋体";
+}

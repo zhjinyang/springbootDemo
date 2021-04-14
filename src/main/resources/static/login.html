@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+    <title>注册页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link rel="stylesheet" href="css/loginRegister.css" type="text/css" media="all">
+</head>
+
+<body>
+
+<h1>springboot员工管理系统</h1>
+
+<div class="container">
+    <div class="login">
+        <h2>员工登录</h2>
+        <div class="form">
+            <input type="text"  placeholder="请输入公司邮箱" v-model="email" >
+            <button class="sendCode" @click="getEmailCode">发送邮箱验证码</button>
+            <input type="text" placeholder="密码" v-model="code">
+            <button class="loginBtn" @click="doLogin">登录</button>
+        </div>
+    </div>
+</div>
+
+<script src="./js/vue.min.js"></script>
+<script src="./js/axios.min.js"></script>
+<script src="./js/baseaxios.js"></script>
+<script src="./js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+# 配置数据源信息
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boot_test?characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 666
+
+  mail:
+    host: smtp.163.com
+    username: zhjinyang@163.com
+    password: TCUCIMTRAKMZORXV
+
+  redis:
+    database: 1
+
+
+
+# 开启驼峰命名
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+# 开启mapper包的日志
+logging:
+  level:
+    com:
+      codeyancy:
+        cn:
+          mapper: debug
+
